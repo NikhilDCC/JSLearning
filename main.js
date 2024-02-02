@@ -19,7 +19,7 @@ else {
 }
 }
 
-findFactorial(0);
+findFactorial(3);
 
 
 // Check prime number 
