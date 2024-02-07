@@ -95,12 +95,12 @@ function longestCommonSubstring(strs) {
 //Bubble Sort( Swap elements if they are in the wrong order)
 let arr2 = ["zebra", "anternna", "tomato", "apple", "shoe"];
 
-for (let i = 0; i < arr1.length - 1; i++) {
-    for (let j = 0; j < arr1.length - i - 1; j++) {
-        if (arr1[j] > arr1[j + 1]) {
-            let temp = arr1[j];
-            arr1[j] = arr1[j + 1];
-            arr1[j + 1] = temp;
+for (let i = 0; i < arr2.length - 1; i++) {
+    for (let j = 0; j < arr2.length - i - 1; j++) {
+        if (arr2[j] > arr2[j + 1]) {
+            let temp = arr2[j];
+            arr2[j] = arr2[j + 1];
+            arr2[j + 1] = temp;
         }
     }
 }
