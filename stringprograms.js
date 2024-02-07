@@ -91,3 +91,20 @@ function longestCommonSubstring(strs) {
 
 
 
+//Array sorting without sort function
+//Bubble Sort( Swap elements if they are in the wrong order)
+let arr2 = ["zebra", "anternna", "tomato", "apple", "shoe"];
+
+for (let i = 0; i < arr1.length - 1; i++) {
+    for (let j = 0; j < arr1.length - i - 1; j++) {
+        if (arr1[j] > arr1[j + 1]) {
+            let temp = arr1[j];
+            arr1[j] = arr1[j + 1];
+            arr1[j + 1] = temp;
+        }
+    }
+}
+console.log(arr2); // Output: ["anternna", "apple", "shoe", "tomato", "zebra"]
+
+
+
