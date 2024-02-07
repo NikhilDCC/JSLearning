@@ -70,7 +70,9 @@ function longestCommonSubstring(strs) {
     for (let i = 0; i < shortestString.length; i++) {
         for (let j = i + 1; j <= shortestString.length; j++) {
             const substring = shortestString.substring(i, j);
-            if (strs.every(str => str.includes(substring))) { // Check if the substring exists in all strings
+
+            // Check if the substring exists in all strings
+            if (strs.every(str => str.includes(substring))) {
                 if (substring.length > longestSubstring.length) {
                     longestSubstring = substring;
                 }
@@ -80,6 +82,7 @@ function longestCommonSubstring(strs) {
 
     return longestSubstring;
 }
+
 
     let arr = ["Amazon", "AmazonHousing.com","AmazonMicrosoft","azonMorgan Stanley"];
     console.log(longestCommonSubstring(arr));
